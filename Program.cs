@@ -30,6 +30,10 @@
             p.occupation = "Student";
              People people2 = new People("Daniel", 12, "Swansea", 12.5, "Student");
         //makes a new people variable using the new keyword
+            
+            double total_height = 0;
+            int total_age = 0;
+            
             People[] myPeople = new People[9];
             for (int i = 0; i < 9; i ++)
             {
@@ -38,14 +42,19 @@
                 myPeople[i].name = Console.ReadLine();
                 Console.WriteLine("Enter the persons age");
                 myPeople[i].age = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter the persons city");
+                total_age = total_age + myPeople[i].age;
+                Console.WriteLine("Enter the person's city");
                 myPeople[i].city = Console.ReadLine();
                 Console.WriteLine("Enter the persons height");
                 myPeople[i].height = Convert.ToDouble(Console.ReadLine());
+                total_height = total_height + Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Enter the persons occupation");
                 myPeople[i].occupation = Console.ReadLine();
-                
             }
+
+            Console.WriteLine("The total height of everyone is: " + total_height);
+            Console.WriteLine("The average height of everyone is " + total_height/9);
+            Console.WriteLine(");
         }
 
        
