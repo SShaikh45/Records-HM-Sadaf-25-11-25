@@ -41,7 +41,7 @@
                 Console.WriteLine("Enter the persons city");
                 myPeople[i].city = Console.ReadLine();
                 Console.WriteLine("Enter the persons height");
-                myPeople[i].height = COnvert.ToDouble(Console.ReadLine());
+                myPeople[i].height = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Enter the persons occupation");
                 myPeople[i].occupation = Console.ReadLine();
                 
